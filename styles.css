@@ -56,7 +56,7 @@
     margin: 0;
     padding: 0;
     line-height: 40px; /* Should match the height */
-    animation: verticalScroll 10s infinite alternate;
+    animation: verticalScroll 15s infinite alternate;
 }
 
 @keyframes verticalScroll {
