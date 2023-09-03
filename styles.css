@@ -46,3 +46,33 @@
 }
 
 
+.vertical-carousel {
+    overflow: hidden;
+    display: inline-block;
+    height: 40px; /* Adjust the height as needed */
+}
+
+.vertical-carousel p {
+    margin: 0;
+    padding: 0;
+    line-height: 40px; /* Should match the height */
+    animation: verticalScroll 10s infinite alternate;
+}
+
+@keyframes verticalScroll {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+    75% {
+        transform: translateY(-300%);
+    }
+    100% {
+        transform: translateY(-400%);
+    }
+}
