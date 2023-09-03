@@ -1,0 +1,47 @@
+/* Add your custom styles here */
+
+/* Example styles for the hero section */
+/* Add your custom styles here */
+
+/* Example styles for the hero section */
+.hero {
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    padding-top: 100px;
+}
+
+/* Customize the navigation bar */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+}
+
+/* Style the sections */
+.container {
+    padding: 50px 0;
+}
+
+.display-4 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.bg-light {
+    background-color: #f7f7f7;
+}
+

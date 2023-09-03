@@ -1,53 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Team Emiya | Coming Soon</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css">
-
-		<style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-
-			.subhead {
-				font-size: 2em;
-				font-weight: 300;
-				margin: 2em 0;
-			}
-        </style>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emiya</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FontAwesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div class="content">
-                <div class="title">Team Emiya</div>
-				<div class="subhead">&lt;coming-soon /&gt;</div>
+            <a class="navbar-brand" href="#">Emiya</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </body>
-</html>
+    </nav>
 
+    <!-- Hero Section -->
+    <header class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Unlock Your Potential with Emiya</h1>
+            <p class="lead">We partner with clients from the private, public, and not-for-profit sectors in all regions to identify their highest-value opportunities...</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="display-4">About Us</h2>
+            <p>We are a local management consulting firm with a passion for excellence.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="display-4">Our Services</h2>
+            <p>We offer a wide range of consulting services...</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="display-4">Contact Us</h2>
+            <!-- Contact form goes here -->
+        </div>
+    </section>
+
+    <!-- Bootstrap and FontAwesome JavaScript links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
