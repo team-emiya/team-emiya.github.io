@@ -5,9 +5,9 @@
 
 /* Example styles for the hero section */
 .hero {
-    background-image: url('your-hero-image.jpg');
+    background-image: url('chicago-hero-background.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 0 30%;
     min-height: 600px;
     padding-top: 100px;
 }
@@ -39,6 +39,8 @@
 
 .lead {
     font-size: 20px;
+    text-shadow: black 2px 2px 2px;
+    font-weight: 400;
 }
 
 .bg-light {
