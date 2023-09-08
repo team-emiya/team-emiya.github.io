@@ -5,11 +5,16 @@
 
 /* Example styles for the hero section */
 .hero {
-    background-image: url('chicago-hero-background.jpg');
+    background-image: url('assets/chicago-hero-background.jpg');
     background-size: cover;
     background-position: 0 30%;
     min-height: 600px;
     padding-top: 100px;
+}
+
+.emiya-logo{
+    width: 40%;
+    height: auto; 
 }
 
 /* Customize the navigation bar */
@@ -79,4 +84,36 @@
     }
 }
 
-/* Formspree Styles */
+/* Horizontal Carousel */
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the description */
+    color: white;
+    padding: 20px;
+}
+.horizontal-carousel-img{
+    width: 15%;
+    height: auto;
+}
+.horizontal-carousel-container{
+    width: 60%;
+
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the description */
+        color: white;
+        padding: 10px;
+        position: static;
+    }
+    .horizontal-carousel-img {
+        width: 45%;
+        height: auto;
+    }
+
+    .horizontal-carousel-container {
+        width: 100%;
+    }
+}
