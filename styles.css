@@ -1,0 +1,119 @@
+/* Add your custom styles here */
+
+/* Example styles for the hero section */
+/* Add your custom styles here */
+
+/* Example styles for the hero section */
+.hero {
+    background-image: url('assets/chicago-hero-background.jpg');
+    background-size: cover;
+    background-position: 0 30%;
+    min-height: 600px;
+    padding-top: 100px;
+}
+
+.emiya-logo{
+    width: 40%;
+    height: auto; 
+}
+
+/* Customize the navigation bar */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+}
+
+/* Style the sections */
+.container {
+    padding: 50px 0;
+}
+
+.display-4 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.lead {
+    font-size: 20px;
+    text-shadow: black 2px 2px 2px;
+    font-weight: 400;
+}
+
+.bg-light {
+    background-color: #f7f7f7;
+}
+
+
+.vertical-carousel {
+    overflow: hidden;
+    display: inline-block;
+    height: 40px; /* Adjust the height as needed */
+}
+
+.vertical-carousel p {
+    margin: 0;
+    padding: 0;
+    line-height: 40px; /* Should match the height */
+    animation: verticalScroll 15s infinite alternate;
+}
+
+@keyframes verticalScroll {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+    75% {
+        transform: translateY(-300%);
+    }
+    100% {
+        transform: translateY(-400%);
+    }
+}
+
+/* Horizontal Carousel */
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the description */
+    color: white;
+    padding: 20px;
+}
+.horizontal-carousel-img{
+    width: 15%;
+    height: auto;
+}
+.horizontal-carousel-container{
+    width: 60%;
+
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the description */
+        color: white;
+        padding: 10px;
+        position: static;
+    }
+    .horizontal-carousel-img {
+        width: 45%;
+        height: auto;
+    }
+
+    .horizontal-carousel-container {
+        width: 100%;
+    }
+}

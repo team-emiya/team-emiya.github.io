@@ -1,53 +1,229 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Team Emiya | Coming Soon</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css">
-
-		<style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-
-			.subhead {
-				font-size: 2em;
-				font-weight: 300;
-				margin: 2em 0;
-			}
-        </style>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emiya</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FontAwesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div class="content">
-                <div class="title">Team Emiya</div>
-				<div class="subhead">&lt;coming-soon /&gt;</div>
+            <a class="navbar-brand" href="#">
+                <img src="assets/emiya-logos_black.png" alt="Emiya" class="emiya-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </body>
-</html>
+    </nav>
 
+    <!-- Hero Section -->
+    <header class="hero bg-primary text-white text-center py-5 px-5">
+        <div class="container">
+            <h1 class="display-4">
+                Leave the
+
+                <div class="vertical-carousel">
+                    <p>Infrastructure</p>
+                    <p>Technology</p>
+                    <p>Strategy</p>
+                    <p>Design</p>
+                    <p>Solution</p>
+                    <p>Solution</p>
+                </div>
+
+                to us</h1>
+            <p class="lead">We partner with clients from the private, public, and not-for-profit sectors in all regions to identify their highest-value opportunities...</p>
+        </div>
+    </header>
+
+<!-- About Section -->
+<section id="about" class="py-5 px-5">
+    <div class="container">
+        <h2 class="display-4">About Us</h2>
+        <p>Welcome to Emiya, your trusted IT consulting partner in the heart of Chicago. Founded and led by three local Chicagoans with decades of experience, we are dedicated to providing top-notch technology solutions and support for businesses of all sizes.</p>
+
+        <h3>Our Story</h3>
+        <p>Our founders have witnessed the growth and evolution of Chicago's business landscape firsthand. With deep roots in the local community, we understand the unique challenges and opportunities that businesses in Chicago face. Our journey began with a shared vision: to empower local businesses with cutting-edge IT solutions that enhance their efficiency, security, and competitiveness.</p>
+
+        <h3>What Sets Us Apart</h3>
+        <div class="py-3">
+            <div id="imageCarousel" class="carousel slide mx-auto horizontal-carousel-container" data-ride="carousel">
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/local_expertise.jpg" alt="Image 1" class="horizontal-carousel-img d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Local Expertise</h3>
+                            <p>Being natives of Chicago, we have an intimate understanding of the city's business ecosystem. We tailor our solutions to address the specific needs of our fellow Chicago businesses.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/experience.jpg" alt="Image 2" class="horizontal-carousel-img d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Experience</h3>
+                            <p>With three decades of combined experience, our leadership team brings a wealth of knowledge and expertise to every project. We've successfully navigated the ever-changing landscape of technology, and we're committed to keeping our clients ahead of the curve.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/personalize.jpg" alt="Image 3" class="horizontal-carousel-img d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Personalized Service</h3>
+                            <p>At Emiya, we believe in building lasting partnerships. We take the time to understand your unique goals and challenges, allowing us to deliver customized IT solutions that align with your business objectives.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/cutting_edge.jpg" alt="Image 4" class="horizontal-carousel-img d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Cutting-Edge Solutions</h3>
+                            <p>Technology never stands still, and neither do we. We stay at the forefront of IT innovations to provide you with the most advanced and secure solutions available.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Controls -->
+                <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+
+        <h3>Our Mission</h3>
+        <p>Our mission is clear: to empower Chicago businesses to thrive in the digital age. We do this by offering comprehensive IT consulting, managed services, and strategic guidance. When you partner with us, you're not just getting an IT provider; you're gaining a team of dedicated professionals committed to your success.</p>
+
+        <h3>Let's Connect</h3>
+        <p>Whether you're a small startup or an established enterprise, Emiya is here to help you harness the power of technology for your business's growth. Let's collaborate and drive your success in the digital era. <a href="#contact" class="link-opacity-100">Contact us today</a> to schedule a consultation.</p>
+    </div>
+</section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light px-5 py-5">
+        <div class="container">
+            <h2 class="display-4">Our Services</h2>
+            <div class="accordion" id="servicesAccordion">
+
+                <!-- Dropdown Container for Web Development Services -->
+                <div class="card">
+
+                        <div class="card-body">
+                            <section>
+                                <h2>Why Choose Us?</h2>
+                                <ul>
+                                    <li><strong>Customized Solutions:</strong> We craft bespoke websites tailored to your unique brand and goals.</li>
+                                    <li><strong>Cutting-Edge Technology:</strong> Stay ahead with fast, secure, and SEO-optimized websites.</li>
+                                    <li><strong>Mobile Responsiveness:</strong> Engage users on all devices with flawless design.</li>
+                                    <li><strong>User-Centric Design:</strong> Prioritize UX for seamless navigation and interaction.</li>
+                                    <li><strong>Scalability:</strong> Grow effortlessly with adaptable websites.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>What We Offer:</h2>
+                                <ul>
+                                    <li><strong>Website Design & Development:</strong> From landing pages to web applications.</li>
+                                    <li><strong>Website Optimization:</strong> Enhance speed, SEO, and performance.</li>
+                                    <li><strong>Web Analytics:</strong> Gain insights into user behavior.</li>
+                                    <li><strong>Consultation & Strategy:</strong> Tap into our expertise.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Your Online Success Starts Here</h2>
+                                <p>Don't let your digital presence fall behind. Embrace the future with our web development services. Contact us today for a free consultation and let's embark on your digital journey together.</p>
+                            </section>
+                    </div>
+                </div>
+
+                <!-- Add more card elements for other services if needed -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    
+    <section id="contact" class="py-5 px-5">
+        <div class="container">
+            <h2 class="display-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xjvqrepo" method="post">
+                        <fieldset id="form-group">
+                            <div class="form-group">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" class="form-control" name="name" id="full-name" placeholder="First and Last" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="email-address">Email Address</label>
+                                <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                            </div>
+
+                            <!--
+                            <div class="form-group">
+                                <label for="department">Service</label>
+                                <select name="department" class="form-control" id="department" required="">
+                                    <option value="" selected="" disabled="">Select</option>
+                                    <option value="Networking">Networking</option>
+                                    <option value="Mobile Development">Mobile Development</option>
+                                    <option value="UI/UX Design">UI/UX Design</option>
+                                    <option value="Web Development">Web Development</option>
+                                </select>
+                            </div>
+                            -->
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea rows="5" class="form-control" name="message" id="message" placeholder="Your Message" ></textarea>
+                            </div>
+                          
+                          <input type="hidden" class="form-control" name="_subject" id="email-subject" value="Department Contact Form Submission">
+                        </fieldset>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    <div id="confirmation-message" class="mt-3 text-success"></div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Add any additional information or contact details here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="text-center text-muted py-5">&copy; 2023 Emiya. All rights reserved</footer>
+
+    <!-- Bootstrap and FontAwesome JavaScript links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+</body>
+
+
+</html>
